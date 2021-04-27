@@ -1,0 +1,190 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	font-size:12px;
+	color:white;
+	background-color:#110000;
+}
+
+h1 {
+	font-size:30px;
+}
+
+h2 {
+	font-size:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:yellow;
+}
+
+p, ul, li {
+	font-size:12px;
+}
+
+.mainContainer {
+	/*see new google chrome debugger for flex box https://developer.chrome.com/blog/new-in-devtools-90/#flexbox*/
+	display: flex;
+	flex-direction: column;
+	position:relative;
+}
+
+
+
+/*logo and title*/
+.titleAndLogo {
+	width:100%;
+	box-sizing:content-box;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:yellow;
+
+	display: flex;
+	flex-flow: row wrap;
+	align-content:center;
+	justify-content: space-around;
+  
+}
+
+.titleAndLogo .logo {
+	width:10%;
+	
+	/*This relies on the fact a margin set to auto in a flex container absorb extra space. */
+	margin:auto;
+}
+.titleAndLogo .logo img{
+	width:100%;
+	background-color:red;
+	box-sizing:content-box;
+	padding:10px;
+}
+
+.titleAndLogo .title {
+	margin:auto;
+	background-color:red;
+	padding:10px;
+}
+.titleAndLogo .title h1{
+	
+}
+
+
+
+/*navigation bar*/
+.navbar {
+	width:100%;
+	box-sizing:content-box;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+	background-color:red;
+}
+.navbar ul {
+	display: flex;
+	flex-flow: row wrap;
+	align-content:left;
+	justify-content: space-around;
+	
+	list-style-type: none; /* Remove bullets */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margins */
+}
+.navbar li{
+	margin:10px;
+}
+.navbar a{
+	color:white;
+	font-size:1.5em;
+}
+.navbar a:hover,
+.navbar .selected {
+	color:fuchsia !important;
+}
+
+
+/*page content*/
+.mainContent {
+	width:1024px;
+	margin:0 auto;
+}
+.mainContent h2{
+	font-weight:bold;
+	font-size:20px;
+}
+.faccinaTriste {
+	color:red;
+}
+
+.faccinaFelice {
+	color:#00ff00;
+}
+.mainContent p{
+	color:white;
+	font-size:16px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.mainContent iframe{
+	display:block;
+	margin:0 auto;
+	width:560px; 
+	height:315px;
+}
+.mainContent a{
+	color:#00FFFF;
+	
+}
+.mainContent a:hover {
+	color:yellow;
+}
+.mainContent hr {
+	border-color:yellow;
+	margin: 20px 0;
+}
+
+
+/*footer*/
+.footer {
+	position:fixed;
+	background-color:blue;
+	color:white;
+	width:100%;
+	bottom:0px;
+	left:0px;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+.footer p{
+	text-align:center;
+	font-size:1em;
+}
+
+
+
+
+
+/*media queries*/
+
+/* On screens that are 1024px or less */
+@media screen and (max-width: 1024px) {
+  .mainContent {
+	width:100%;
+}
+
+/* On screens that are 600px or less*/
+@media screen and (max-width: 600px) {
+  
+}
+
+/* On screens that are 400px or less */
+@media screen and (max-width: 400px) {
+  
+.mainContent iframe{
+	display:block;
+	margin:0 auto;
+	width:100%;
+}
+}

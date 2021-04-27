@@ -1,0 +1,62 @@
+﻿body {
+	background-image: url('sfondo.jpg'); /*url('sfondo-small.jpg');*/
+	background-repeat: no-repeat;/*repeat-x repeat-y;*/
+	background-position: 0 0;/*200 300;*/
+	background-size: contain; /*cover*/
+	background-attachment: fixed; /*scroll*/
+}
+table, td {
+	border: 3px solid red;
+}
+.td-giallo {
+	background-color:yellow;
+}
+#cella-verde {
+	border: 3px solid red;
+	
+	/*border-size:3px;
+	border-style:solid;
+	border-color:red;*/
+}
+
+.box1 {
+	width:600px;
+	background-color:yellow;
+	position:relative; /*il padre a cui si riferiscono i box absolute*/
+}
+.box2 {
+	width:100px;
+	height:50px;
+	background-color:#80fe80;
+	border: 1px solid black;
+	font-size:10px;
+}
+
+.boxRelative {
+	position:relative; /*relativo alla sua posizione originaria*/
+	top:20px;
+	left:85px;
+	border: 1px solid red;
+	background-color:#ff7070;
+}
+
+.boxAbsolute {
+	position:absolute; /*assoluto rispetto al padre (primo discendente che ha position relative)*/
+	top:-10px;
+	left:305px;
+	border: 1px solid orange;
+}
+
+.boxAbsoluteRB {
+	position:absolute; /*assoluto rispetto al padre (primo discendente che ha position relative)*/
+	right:10px;
+	bottom:35px;
+	border: 1px solid orange;
+}
+
+.boxFixed {
+	position:fixed;	/*fisso sullo schermo*/
+	top:100px;
+	left:25px;
+	border: 1px solid black;
+}

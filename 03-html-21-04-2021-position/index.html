@@ -1,0 +1,75 @@
+﻿<html>
+	<head>
+		<title>Milan</title>
+		<meta charset="UTF-8">
+		<link rel=stylesheet href="stile.css" />
+	</head>
+	<body>
+		<p>ciao</p>
+		
+		<div class="box1">
+			padre a cui si riferiscono i box absolute
+			<div class="box2">
+				static
+			</div>
+			<div class="box2 boxFixed">
+				fixed (se usi la scrollbar questo resta fisso sullo schermo)
+			</div>
+			<div class="box2">
+				static
+			</div>
+			<div class="box2 boxRelative">
+				relative (relativo alla sua posizione originaria, cioè quella static)
+			</div>
+			<div class="box2">
+				static
+			</div>
+			<div class="box2 boxAbsolute">
+				absolute top left (rispetto al primo discendente con position:relative;)
+			</div>
+			<div class="box2 boxAbsoluteRB">
+				absolute right bottom
+			</div>
+		</div>
+		
+		<!--
+			questo è un commento
+		!-->
+		<table border=1 width=50% height=300>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+		</table>
+		<table border=1>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+		</table>
+		<table border=1>
+			<tr>
+				<td class="td-giallo" id="cella-verde">1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr class="td-giallo">
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+body {
+	background-image: url('sfondo.jpg'); /*url('sfondo-small.jpg');*/
+	background-repeat: no-repeat;/*repeat-x repeat-y;*/
+	background-position: 0 0;/*200 300;*/
+	background-size: contain; /*cover*/
+	background-attachment: fixed; /*scroll*/
+}
+table, td {
+	border: 3px solid red;
+}
+.td-giallo {
+	background-color:yellow;
+}
+#cella-verde {
+	border: 3px solid red;
+	
+	/*border-size:3px;
+	border-style:solid;
+	border-color:red;*/
+}
