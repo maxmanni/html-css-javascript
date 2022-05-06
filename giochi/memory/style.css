@@ -31,7 +31,7 @@
 	 display: table-cell;
 	 background-color: green;
 	 border: 1px solid black;
-	 font-size: 15vh;
+	 font-size: 40px;
 	 text-align:center;
 	 vertical-align:middle;
  }
@@ -57,4 +57,13 @@
 	width:100%;
 	margin:0;
   }
+   
+}
+
+/* small smartphone */
+@media screen and (max-width: 320px) {
+  .card {
+    font-size: 20px;
+  }
+   
 }
